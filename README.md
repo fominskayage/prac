@@ -1,1 +1,1 @@
-# prac
+# practicum
