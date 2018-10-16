@@ -1,0 +1,25 @@
+
+User:
+	login Login
+	logout Logout
+	create Create new document
+	coordinate Coordinate documents
+	view View my documents
+	exit Exit
+	
+Admin:
+	create Create new type
+	exit Exit
+		
+Grammar:
+
+	S -> Cond => Attr | Attr
+    	Cond ->[Disj]
+    	Disj -> Conj { | Conj }
+    	Conj -> Neg { & Neg }
+    	Neg -> ! Neg | Expr
+    	Expr -> ( Disj ) | Attr Cmp Val | Attr Cmp Attr | Val Cmp Attr
+    	Attr -> $ {1..9, a..z , A..Z, _}
+    	Val -> 1 Num | 2 Num ... | 9 Num
+    	Num -> 0 Num | ... | 9 Num
+    	Cmp -> >= | <= | == | < | >
