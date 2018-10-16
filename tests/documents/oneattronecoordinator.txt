@@ -1,6 +1,0 @@
-Galya
-attr1 1
-
-Kevin
-
-38
